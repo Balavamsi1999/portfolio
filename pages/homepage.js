@@ -451,7 +451,9 @@ function Homepage() {
                     <h3 style = {{fontSize: "14px",color:"black", fontFamily: "sans-serif", textTransform: "uppercase", marginBottom: "5px"}}> Segregation of Areca Nuts </h3>
                     <h3 style = {{fontSize: "14px",color: "#565757"}}> 
                       <a href = "https://link.springer.com/chapter/10.1007/978-3-031-05767-0_2" target = "_blank"> 
-                        <FontAwesomeIcon icon={faArrowUpRightFromSquare} style = {{color: "black"}}/> Publication 
+                        <>
+                          <FontAwesomeIcon icon={faArrowUpRightFromSquare} style = {{color: "black"}}/> Publication 
+                        </>
                       </a>
                     </h3>
                   </Col>
@@ -532,7 +534,7 @@ function Homepage() {
                   <Col>
                     <h3 style = {{fontSize: "14px",color:"black", fontFamily: "sans-serif", textTransform: "uppercase", marginBottom: "5px"}}> Client-Server Text Chat Application </h3>
                     <h3 style = {{fontSize: "14px",color: "#565757"}}> 
-                      <a href = "https://nycanx.com/" target = "_blank"> <FontAwesomeIcon icon={faArrowUpRightFromSquare} style = {{color: "black"}}/> Repository </a> </h3>
+                      <a href = "https://nycanx.com/" target = "_blank"> <><FontAwesomeIcon icon={faArrowUpRightFromSquare} style = {{color: "black"}}/> Repository</> </a> </h3>
                   </Col>
                   <Col style = {{marginLeft: "auto"}}>
                     <h3 style = {{fontSize: "14px", color: "#6c62f4"}}> Sep 2022 - Dec 2022 </h3>
@@ -558,14 +560,14 @@ function Homepage() {
                   <div>
                     <h3 style = {{fontSize: "20px",color: "black"}}> Suraj Prakash</h3>
                     <h4 style = {{fontSize: "14px",color: "#565757", marginBottom: "20px"}} >Vice President and Head of Engineering at Kuvera.in</h4>
-                    <FontAwesomeIcon icon = {faQuoteLeft} size = "md" style = {{color: "black", marginRight: "10px"}} />  
+                    <> <FontAwesomeIcon icon = {faQuoteLeft} size = "md" style = {{color: "black", marginRight: "10px"}} />  </>
                     <h3 style = {{fontSize: "16px",color: "#565757", padding: "0 15px"}}>  Vamsi is <span className="fade-in-fast" style = {{color: "black"}}>focused and highly committed  </span> to his work. He <span className="fade-in-fast" style = {{color: "black"}}>takes complete ownership </span>of his projects and tasks. He has consistently demonstrated <span className="fade-in-fast" style = {{color: "black"}}> deep technical knowledge </span>, and the ability to deep dive and get to the root cause of the issues. He is a great team player as well. </h3>
                   </div>
                 </div>
                 <div>
                     <h3 style = {{fontSize: "20px",color: "black"}}> Naveen Kumar</h3>
                     <h4 style = {{fontSize: "14px",color: "#565757", marginBottom: "20px"}} > Technical Lead at Kuvera.in</h4>
-                    <FontAwesomeIcon icon = {faQuoteLeft} size = "md" style = {{color: "black", marginRight: "10px"}} />  
+                    <> <FontAwesomeIcon icon = {faQuoteLeft} size = "md" style = {{color: "black", marginRight: "10px"}} />  </>
                     <h3 style = {{fontSize: "16px",color: "#565757", padding: "0 15px"}}>  Mr. Vamsi is a <span className="fade-in-fast" style = {{color: "black"}}> dedicated, patient, guy with a microscopic eye for details! </span> I was amazed at times how he had come up with bugs that were buried deep and went unnoticed and solved them.
                       He is a <span className="fade-in-fast" style = {{color: "black"}}>fast learner, my go-to guy for complex problem. </span>
                       I really <span className="fade-in-fast" style = {{color: "black"}}>enjoyed </span> working with Vamsi! He has been a <span className="fade-in-fast" style = {{color: "black"}}>massive contributor  to solving complex problems and building key features </span> at Kuvera in this short span of time! 
@@ -574,7 +576,7 @@ function Homepage() {
                 <div>
                     <h3 style = {{fontSize: "20px",color: "black"}}> Ajaiy Dharsaun</h3>
                     <h4 style = {{fontSize: "14px",color: "#565757", marginBottom: "20px"}} > Managing Director at Tesark</h4>
-                    <FontAwesomeIcon icon = {faQuoteLeft} size = "md" style = {{color: "black", marginRight: "10px"}} />  
+                    <> <FontAwesomeIcon icon = {faQuoteLeft} size = "md" style = {{color: "black", marginRight: "10px"}} /> </>  
                     <h3 style = {{fontSize: "16px",color: "#565757", padding: "0 15px"}}>  Vamsi was <span className="fade-in-fast" style = {{color: "black"}}> very quick </span>to learn and adapt to new technologies and was a key development contributor to many projects at Tesark. We were very happy with his performance and efficiency.
                     Vamsi is a <span className = "fade-in-fast" style = {{color: "black"}}>self-motivated and organized person </span> and was giving his 100% during the WFH times. I would <span className="fade-in-fast" style = {{color: "black"}}> highly recommend </span> Vamsi for technical roles.
                     </h3>
@@ -587,7 +589,7 @@ function Homepage() {
           </Row>
 
           <h2 id = "anchor-awards" style = {{fontSize: "20px", marginTop: "75px", color:"#6c62f4", fontFamily: "sans-serif", marginBottom: "30px"}}>  AWARDS & ACHIEVEMENTS</h2> <br />
-          <Row justify = "center" style = {{marginBottom: "100px"}}>
+          <Row justify = "center" style = {{marginBottom: "150px"}}>
             <Card hoverable className = "carousel-card" style = {activeAnchor == "#anchor-awards" ? elevatedCardStyle : normalCardStyle}>
               <List itemLayout="horizontal" dataSource={awards} className="list"
                   renderItem={(item, index) => (
@@ -609,7 +611,9 @@ function Homepage() {
       
   
       <Button className = "resume" onClick = {downloadPDF}>
-        <FontAwesomeIcon icon={faDownload} style = {{color: "#6c62f4", marginRight: "10px"}}/>  
+        <>
+          <FontAwesomeIcon icon={faDownload} style = {{color: "#6c62f4", marginRight: "10px"}}/>  
+        </>
         Resume
       </Button>
       </div>
