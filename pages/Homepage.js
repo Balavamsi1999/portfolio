@@ -194,7 +194,7 @@ function Homepage() {
             <Image src = "/logo.png" width = {150} preview = {false} />
           </Col>
           <Col>
-            <Button className = "media" href = "https://www.linkedin.com/in/balavamsi/" target="_blank" >
+            <Button className = "media" href = { "https://www.linkedin.com/in/balavamsi/" } target="_blank" >
                 <>
                   <FontAwesomeIcon icon={faLinkedin} style = {{color: "blue", marginRight: "10px"}} loading = "lazy"/> 
                 </>
@@ -202,7 +202,7 @@ function Homepage() {
             </Button>
           </Col>
           <Col>
-            <Button className = "media" href = "https://github.com/Balavamsi1999?tab=repositories" target="_blank" >
+            <Button className = "media" href = { "https://github.com/Balavamsi1999?tab=repositories" } target="_blank" >
               <>
                 <FontAwesomeIcon icon={faGithub} style = {{color: "black", marginRight: "10px"}}/>  
               </>
@@ -210,13 +210,13 @@ function Homepage() {
             </Button>
           </Col>
           <Col>
-            <Button className = "media" href = "mailto:balavamsiatukuri22@gmail.com" target="_blank" >
+            <Button className = "media" href = {"mailto:balavamsiatukuri22@gmail.com"} target="_blank" >
               {/* <FontAwesomeIcon icon={faEnvelope} style = {{color: "red", marginRight: "10px"}}/>   */}
               <GmailIcon /> <span style={{ margin: '0 3px' }}></span> Gmail
             </Button>
           </Col>
           <Col>
-            <Button className = "media"  href = "https://leetcode.com/Balavamsi1999/" target="_blank" >
+            <Button className = "media"  href = {"https://leetcode.com/Balavamsi1999/"} target="_blank" >
               <LeetCodeIcon /> Leetcode
             </Button>
           </Col>
@@ -450,7 +450,7 @@ function Homepage() {
                   <Col>
                     <h3 style = {{fontSize: "14px",color:"black", fontFamily: "sans-serif", textTransform: "uppercase", marginBottom: "5px"}}> Segregation of Areca Nuts </h3>
                     <h3 style = {{fontSize: "14px",color: "#565757"}}> 
-                      <a href = "https://link.springer.com/chapter/10.1007/978-3-031-05767-0_2" target = "_blank"> 
+                      <a href = {"https://link.springer.com/chapter/10.1007/978-3-031-05767-0_2"} target = "_blank"> 
                         <>
                           <FontAwesomeIcon icon={faArrowUpRightFromSquare} style = {{color: "black"}}/> Publication 
                         </>
@@ -485,7 +485,7 @@ function Homepage() {
                   </Col>
                   <Col>
                     <h3 style = {{fontSize: "14px",color:"black", fontFamily: "sans-serif", textTransform: "uppercase", marginBottom: "5px"}}> New York Cannabis Exchange </h3>
-                    <h3 style = {{fontSize: "14px",color: "#565757"}}> <a href = "https://nycanx.com/" target = "_blank"> WWW.NYCANX.COM</a> </h3>
+                    <h3 style = {{fontSize: "14px",color: "#565757"}}> <a href = {"https://nycanx.com/"} target = "_blank"> WWW.NYCANX.COM</a> </h3>
                   </Col>
                   <Col style = {{marginLeft: "auto"}}>
                     <h3 style = {{fontSize: "14px", color: "#6c62f4"}}> Feb 2023 - Present </h3>
@@ -509,7 +509,7 @@ function Homepage() {
                   </Col>
                   <Col>
                     <h3 style = {{fontSize: "14px",color:"black", fontFamily: "sans-serif", textTransform: "uppercase", marginBottom: "5px"}}> Decentralized food bank application </h3>
-                    <h3 style = {{fontSize: "14px",color: "#565757"}}> <a href = "https://nycanx.com/" target = "_blank"> WWW.FOODBANK.COM</a> </h3>
+                    <h3 style = {{fontSize: "14px",color: "#565757"}}> <a href = {"https://nycanx.com/"} target = "_blank"> WWW.FOODBANK.COM</a> </h3>
                   </Col>
                   <Col style = {{marginLeft: "auto"}}>
                     <h3 style = {{fontSize: "14px", color: "#6c62f4"}}> Sep 2022 - Dec 2022 </h3>
@@ -534,7 +534,7 @@ function Homepage() {
                   <Col>
                     <h3 style = {{fontSize: "14px",color:"black", fontFamily: "sans-serif", textTransform: "uppercase", marginBottom: "5px"}}> Client-Server Text Chat Application </h3>
                     <h3 style = {{fontSize: "14px",color: "#565757"}}> 
-                      <a href = "https://nycanx.com/" target = "_blank"> <><FontAwesomeIcon icon={faArrowUpRightFromSquare} style = {{color: "black"}}/> Repository</> </a> </h3>
+                      <a href = {"https://nycanx.com/"} target = "_blank"> <><FontAwesomeIcon icon={faArrowUpRightFromSquare} style = {{color: "black"}}/> Repository</> </a> </h3>
                   </Col>
                   <Col style = {{marginLeft: "auto"}}>
                     <h3 style = {{fontSize: "14px", color: "#6c62f4"}}> Sep 2022 - Dec 2022 </h3>
