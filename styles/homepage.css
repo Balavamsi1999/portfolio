@@ -1,0 +1,268 @@
+.media{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 0.75em;
+  background-color: #fff;
+  border-radius: 50px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  /* transition: box-shadow 0.2s ease-in-out; */
+  transition: all 0.3s ease;
+  animation: stomp 1s ease-in-out infinite alternate;
+  
+}
+
+.media:hover {
+    box-shadow: 0px 40px 30px rgba(0, 0, 0, 0.3);
+    color: #000 !important;
+    border-color: rgb(112, 111, 111) !important;
+    transform: translateY(-1px);
+}
+
+.roll{
+    display: inline-block;
+    
+}
+
+.fade-in {
+  opacity: 0; /* Start with the element hidden */
+  animation-name: fadeIn; /* Specify the name of the animation */
+  animation-duration: 10s; /* Set the duration of the animation */
+  animation-delay: 350ms; /* Set a delay before the animation starts */
+  animation-fill-mode: forwards; /* Ensure the element stays visible at the end of the animation */
+}
+
+.fade-in-fast {
+    opacity: 0; /* Start with the element hidden */
+    animation-name: fadeIn; /* Specify the name of the animation */
+    animation-duration: 5s; /* Set the duration of the animation */
+    animation-delay: 150ms; /* Set a delay before the animation starts */
+    animation-fill-mode: forwards; 
+    font-size: 18px;
+  }
+
+  .ant-carousel .slick-dots li button {
+    width: 15px;
+    height: 5px;
+    background: #868E96 !important;
+    margin: 0px !important 
+  }
+
+  .ant-carousel .slick-dots li.slick-active button {
+    width: 15px;
+    height: 5px;
+    background: black !important;
+    color: black;
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
+/* .list li {
+    animation: bounceIn 0.5s ease-in-out;
+    animation-fill-mode: both;
+    visibility: hidden;
+} */
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .list-item {
+    opacity: 0;
+    transform: translateX(-50%);
+    animation: reveal 2s ease-out forwards;
+  }
+  
+  .list-item:nth-child(1) {
+    --index: 1;
+    animation-delay: calc(var(--index) * 2s);
+  }
+  
+  .list-item:nth-child(2) {
+    --index: 2;
+    animation-delay: calc(var(--index) * 2s);
+  }
+  
+  .list-item:nth-child(3) {
+    --index: 3;
+    animation-delay: calc(var(--index) * 2s);
+  }
+  
+  .list-item:nth-child(4) {
+    --index: 4;
+    animation-delay: calc(var(--index) * 2s);
+  }
+
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  } 
+
+
+.hover:hover{
+    box-shadow: 0 25px 20px rgba(0,0,0,0.33) !important;
+    transform: translate3d(0px, -10px, 0px) !important;
+    background-color: #8b86c9;
+    color: white !important
+}
+
+.resume{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em 0.75em;
+  background-color: #fff;
+  border-radius: 50px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.resume:hover {
+  box-shadow: 0px 20px 30px rgba(54, 54, 54, 0.3);
+  color: #000 !important;
+  border-color: rgb(112, 111, 111) !important;
+  transform: translateY(-1px);
+}
+  
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+/*   
+  .list li {
+    opacity: 0;
+    transform: translateX(-50%);
+    animation: reveal 2s ease-out forwards;
+    animation-delay: calc(var(--index) * 5s);
+  }
+
+  .list li:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .list li:nth-child(2) {
+    animation-delay: 4s;
+  }
+  
+  .list li:nth-child(3) {
+    animation-delay: 6s;
+  }
+  
+  .list li:nth-child(4) {
+    animation-delay: 8s;
+  }
+  
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  } */
+  
+
+
+  
+  
+  
+
+  
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateY(-20px);
+    }
+    80% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .list li:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .list li:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .list li:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .list li:nth-child(4) {
+    animation-delay: 0.3s;
+  }
+  .list li:nth-child(5) {
+    animation-delay: 0.4s;
+  }
+  
+
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0; /* Start with the element hidden */
+    }
+    to {
+      opacity: 1; /* End with the element fully visible */
+    }
+}
+
+@keyframes stomp {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(5px);
+    }
+  }
+
+@keyframes roll {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+
+
