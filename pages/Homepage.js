@@ -118,10 +118,13 @@ function Homepage() {
 
   const downloadPDF = () => {
     const pdfURL = '/Vamsi_resume.pdf';
+    const filename = 'Vamsi_resume.pdf';
+   
     fetch(pdfURL)
       .then(response => response.blob())
       .then(blob => {
-        saveAs(blob, 'Vamsi_resume.pdf');
+        // saveAs(blob, filename, options);
+        window.open(URL.createObjectURL(blob), '_blank');
       })
       .catch(error => console.error(error));
   }
@@ -223,7 +226,7 @@ function Homepage() {
         </Row>
       </div>
 
-      <div style={{flex: 1, overflow: "scroll" }}>
+      <div style={{flex: 1, overflow: "scroll", padding: "15px", marginTop: "15px"}}>
       <Row id= "anchor-intro"  justify="center">
         <Col sm = {22} md= {22} lg = {18}>
           <Row gutter={[0, 32]}  style = {{padding: "10px", marginTop: "100px"}} justify="space-between" align="middle">
@@ -408,8 +411,8 @@ function Homepage() {
                 </Row>
 
                 {/* <Card  style = {{borderRadius: "20px", margin: "10px 0px 10px 0px", boxShadow: " 0 5px 10px rgba(0,0,0,0.22)" , transform: "translate3d(0px, -1px, 0px)"}}> */}
-                  <Row style = {{padding: "30px"}}>
-                    <Timeline items={kuveraExperience} style = {{padding: "0px"}}>
+                  <Row style = {{padding: "10px"}}>
+                    <Timeline items={kuveraExperience} style = {{padding: "0px", marginTop: "20px"}}>
                     </Timeline>
                   </Row>
                 {/* </Card> */}
@@ -431,8 +434,8 @@ function Homepage() {
                   </Col>
                 </Row>
 
-                <Row style = {{padding: "30px"}}>
-                  <Timeline items={tesarkExperience} >
+                <Row style = {{padding: "10px"}}>
+                  <Timeline items={tesarkExperience} style = {{padding: "0px", marginTop: "20px"}}>
                   </Timeline>
                 </Row>
               </Col>
