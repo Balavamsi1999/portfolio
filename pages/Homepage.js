@@ -37,8 +37,8 @@ function Homepage() {
   ]
 
   const programmingLanguages = ['C', 'C++', 'JavaScript', 'Ruby', 'Python', 'Java', 'Solidity']
-  const backendFrameWorks = ['Ruby On Rails', 'Node.js', 'Django', 'SpringBoot', 'MySQL', 'MongoDB', 'redis']
-  const frontEndFrameWorks = ['Next.js', 'React.js', 'ant design', 'Bootstrap', 'HTML', 'CSS', 'JS(ES6)']
+  const backendFrameWorks = ['Ruby On Rails', 'Node.js', 'Django', 'SpringBoot', 'MySQL', 'MongoDB', 'Redis']
+  const frontEndFrameWorks = ['Next.js', 'React.js', 'Ant Design', 'Bootstrap', 'HTML', 'CSS', 'JS(ES6)']
 
 
  const kuveraExperience = 
@@ -174,7 +174,7 @@ function Homepage() {
     },{
       key: '7',
       href: '#anchor-awards',
-      title: 'awards'
+      title: 'Awards'
     }
   ];
 
@@ -591,7 +591,7 @@ function Homepage() {
                 
           </Row>
 
-          <h2 id = "anchor-awards" style = {{fontSize: "20px", marginTop: "75px", color:"#6c62f4", fontFamily: "sans-serif", marginBottom: "30px"}}>  AWARDS & ACHIEVEMENTS</h2> <br />
+          <h2 id = "anchor-awards" style = {{fontSize: "20px", marginTop: "75px", color:"#6c62f4", fontFamily: "sans-serif", marginBottom: "30px"}}>  Awards & Achievements</h2> <br />
           <Row justify = "center" style = {{marginBottom: "150px"}}>
             <Card hoverable className = "carousel-card" style = {activeAnchor == "#anchor-awards" ? elevatedCardStyle : normalCardStyle}>
               <List itemLayout="horizontal" dataSource={awards} className="list"
