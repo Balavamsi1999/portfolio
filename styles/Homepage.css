@@ -362,9 +362,6 @@ span{
   color: #6c62f4;
 }
 
-
-
-
 :where(.css-dev-only-do-not-override-ph9edi).ant-anchor-wrapper:not(.ant-anchor-horizontal) .ant-anchor .ant-anchor-ink{
   background-color: #6c62f4;
 }

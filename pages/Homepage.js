@@ -123,8 +123,8 @@ function Homepage() {
     fetch(pdfURL)
       .then(response => response.blob())
       .then(blob => {
-        // saveAs(blob, filename, options);
-        window.open(URL.createObjectURL(blob), '_blank');
+        saveAs(blob, filename, options);
+        // window.open(URL.createObjectURL(blob), '_blank');
       })
       .catch(error => console.error(error));
   }
