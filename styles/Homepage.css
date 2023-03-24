@@ -365,3 +365,11 @@ span{
 :where(.css-dev-only-do-not-override-ph9edi).ant-anchor-wrapper:not(.ant-anchor-horizontal) .ant-anchor .ant-anchor-ink{
   background-color: #6c62f4;
 }
+
+:where(.css-ph9edi).ant-anchor-wrapper .ant-anchor .ant-anchor-link-active>.ant-anchor-link-title {
+  color: #6c62f4;
+}
+
+:where(.css-ph9edi).ant-anchor-wrapper:not(.ant-anchor-horizontal) .ant-anchor .ant-anchor-ink{
+  background-color: #6c62f4;
+}
